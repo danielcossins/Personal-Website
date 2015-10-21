@@ -1,4 +1,3 @@
-console.log(about);
 about.addEventListener("click", function(){
   console.log("about");
 });

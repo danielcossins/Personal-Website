@@ -1,3 +1,6 @@
+html{
+  display: inline;
+}
 .middle{
   display: block;
   text-align: center;
@@ -15,6 +18,18 @@
 
 .circleText{
   margin-top: 60px;
+}
+
+#title{
+  font-size: 40px;
+}
+
+#main{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#header{
+  margin-top: 10px;
 }
 
 /* The animation code */
