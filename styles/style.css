@@ -9,8 +9,12 @@
   color: black;
   border: 4px solid black;
   border-radius: 100%;
-  height: 200px;
-  width: 200px;
+  height: 190px;
+  width: 190px;
+}
+
+.circleText{
+  margin-top: 60px;
 }
 
 /* The animation code */
