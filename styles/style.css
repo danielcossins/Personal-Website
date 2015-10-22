@@ -64,8 +64,19 @@ body{
   width: 30%;
   border-radius: 100%;
 }
+/*Mobile-------------------*/
+#mobile{
+  display: none;
+}
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 830px){
+  #mobile{
+    display: block;
+  }
+  #main{
+    display: none;
+  }
+
   .circle{
     display: block;
     display: block;
