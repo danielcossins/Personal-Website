@@ -59,8 +59,8 @@ body{
   font-size: 0px;
 }
 #mainPic{
-  margin-top: 80px;
-  min-width: 120px;
+  margin-top: 40px;
+  min-width: 200px;
   width: 30%;
   border-radius: 100%;
 }
@@ -76,13 +76,42 @@ body{
   #main{
     display: none;
   }
+  /*/////////////*/
+  /*#header{
+    display: inline-block;
+  }
+  #about{
+    float: left;
+  }
+  #contact{
+    float: left;
+  }
+  #skills{
+    float: right;
+  }
+  #projects{
+    float: right;
+  }*/
 
-  .circle{
+  /*.circle{
     display: block;
     display: block;
     text-align: center;
     margin: 0 auto;
+  }*/
+  .circle{
+    display: inline-block;
+    color: black;
+    border: 4px solid black;
+    border-radius: 100%;
+    height: 190px;
+    width: 190px;
+    margin-left: calc((200% - 788px) / 5);
   }
+
+
+
+  /*TITLE-----------*/
   .title{
     display: block;
   }
@@ -95,6 +124,15 @@ body{
     text-align: center;
     width: 100%;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .circle{
+    display: block;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
