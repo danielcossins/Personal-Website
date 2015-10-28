@@ -7,11 +7,13 @@ about.addEventListener("click", function(){
   console.log("about");
   // main.style.display = "none";
   // mobile.style.display = "none";
-  aboutpg.style.display = "block";
+  aboutpg.style.display = "";
+  mainPic.style.display = "none";
 });
 
 contact.addEventListener("click", function(){
   console.log("contact");
+  aboutpg.style.display = "none";
   // main.style.display = "none";
   // mobile.style.display = "none";
   // contactpg.style.display = "block";

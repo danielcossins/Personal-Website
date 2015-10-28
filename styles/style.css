@@ -67,7 +67,7 @@ body{
   margin-bottom: 40px;
   font-size: 0px;
 }
-#mainPic{
+.mainPic{
   margin-top: 40px;
   min-width: 200px;
   width: 30%;
