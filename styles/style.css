@@ -170,13 +170,12 @@ body{
   }
 }
 
-/* The animation code */
+/*Animations*/
 @keyframes change-color {
     from {background-color: white; color: black;}
     to {background-color: black; color: white;}
 }
 
-/* The element to apply the animation to */
 .circle:hover {
   color: white;
   background-color: black;
@@ -184,6 +183,12 @@ body{
   animation-name: change-color;
   animation-duration: 200ms;
 }
+
+.nameTitle:hover {
+  cursor: pointer;
+}
+
+
 
 /*.wrapper:hover #slide {
     transition: 1s;

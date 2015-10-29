@@ -1,29 +1,38 @@
+var nameTitleArr = document.getElementsByClassName("nameTitle");
+
 setDisplayNone();
 mainPic.style.display = "";
 mobilePic.style.display = "";
 
+(nameTitleArr[0], nameTitleArr[1]).addEventListener("click", function(){
+  console.log("nameTitle");
+  removeClassAll("slideInRight");
+  addClassAll("fadeOut");
+  addClass2(mainPic, mobilePic, "fadeIn");
+  setTimeout(function(){
+    setDisplayNone();
+    mainPic.style.display = "";
+    mobilePic.style.display = "";
+    removeClassAll("fadeOut");
+  }, 1000);
+});
+
 about.addEventListener("click", function(){
   console.log("about");
-  addClass2(mainPic, mobilePic, "fadeOut");
+  removeClassAll("slideInRight");
+  addClassAll("fadeOut");
+  addClass2(aboutpgMain, aboutpgMobile, "slideInRight");
   setTimeout(function(){
     setDisplayNone();
     aboutpgMain.style.display = "";
     aboutpgMobile.style.display = "";
-    removeClass2(mainPic, mobilePic, "fadeOut");
+    removeClassAll("fadeOut");
   }, 1000);
-  // mainPic.classList.add("slideOutLeft");
-  // mainPic.style.display = "none";
-
-
-
-  // mobilePic.classList.add("animated");
-  // mobilePic.classList.add("fadeOut");
-  // mobilePic.style.display = "none";
 });
 
 contact.addEventListener("click", function(){
   console.log("contact");
-  aboutpg.style.display = "none";
+  // aboutpg.style.display = "none";
   // main.style.display = "none";
   // mobile.style.display = "none";
   // contactpg.style.display = "block";
@@ -55,6 +64,34 @@ function setDisplayNone(){
 
   mainPic.style.display = "none";
   mobilePic.style.display = "none";
+}
+
+function addClassAll(className){
+  contactpgMain.classList.add(className);
+  contactpgMobile.classList.add(className);
+  skillspgMain.classList.add(className);
+  skillspgMobile.classList.add(className);
+  projectspgMain.classList.add(className);
+  projectspgMobile.classList.add(className);
+  aboutpgMain.classList.add(className);
+  aboutpgMobile.classList.add(className);
+
+  mainPic.classList.add(className);
+  mobilePic.classList.add(className);
+}
+
+function removeClassAll(className){
+  contactpgMain.classList.remove(className);
+  contactpgMobile.classList.remove(className);
+  skillspgMain.classList.remove(className);
+  skillspgMobile.classList.remove(className);
+  projectspgMain.classList.remove(className);
+  projectspgMobile.classList.remove(className);
+  aboutpgMain.classList.remove(className);
+  aboutpgMobile.classList.remove(className);
+
+  mainPic.classList.remove(className);
+  mobilePic.classList.remove(className);
 }
 
 function addClass2(el1, el2, className){
