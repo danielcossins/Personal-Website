@@ -1,17 +1,15 @@
-contactpg.style.display = "none";
-skillspg.style.display = "none";
-projectspg.style.display = "none";
-aboutpgMain.style.display = "none";
-aboutpgMobile.style.display = "none";
+setDisplayNone();
+mainPic.style.display = "";
+mobilePic.style.display = "";
 
 about.addEventListener("click", function(){
   console.log("about");
-  // main.style.display = "none";
-  // mobile.style.display = "none";
   mainPic.classList.add("animated");
   mainPic.classList.add("fadeOut");
+  mobilePic.classList.add("animated");
+  mobilePic.classList.add("fadeOut");
   setTimeout(function(){
-    mainPic.style.display = "none";
+    setDisplayNone();
     aboutpgMain.style.display = "";
     aboutpgMobile.style.display = "";
   }, 1000);
@@ -46,3 +44,17 @@ projects.addEventListener("click", function(){
   // mobile.style.display = "none";
   // projectspg.style.display = "block";
 });
+
+function setDisplayNone(){
+  contactpgMain.style.display = "none";
+  contactpgMobile.style.display = "none";
+  skillspgMain.style.display = "none";
+  skillspgMobile.style.display = "none";
+  projectspgMain.style.display = "none";
+  projectspgMobile.style.display = "none";
+  aboutpgMain.style.display = "none";
+  aboutpgMobile.style.display = "none";
+
+  mainPic.style.display = "none";
+  mobilePic.style.display = "none";
+}
