@@ -175,6 +175,10 @@ body{
     from {background-color: white; color: black;}
     to {background-color: black; color: white;}
 }
+@keyframes change-color-reverse{
+  from {background-color: black; color: white;}
+  to {background-color: white; color: black;}
+}
 
 .circle:hover {
   color: white;
@@ -184,9 +188,34 @@ body{
   animation-duration: 200ms;
 }
 
-.nameTitle:hover {
+
+.nameTitle:hover{
   cursor: pointer;
 }
+.nameTitle:hover #name{
+  color: white;
+  background-color: black;
+  animation-name: change-color;
+  animation-duration: 400ms;
+}
+.nameTitle:hover #sd{
+  color: black;
+  background-color: white;
+  animation-name: change-color-reverse;
+  animation-duration: 400ms;
+}
+/*#name:hover{
+  color: white;
+  background-color: black;
+  animation-name: change-color;
+  animation-duration: 200ms;
+}
+#sd:hover{
+  color: black;
+  background-color: white;
+  animation-name: change-color-reverse;
+  animation-duration: 200ms;
+}*/
 
 
 
