@@ -1,7 +1,7 @@
 html{
   /*display: inline;*/
   animation-name: change-color-reverse;
-  animation-duration: 2000ms;
+  animation-duration: 4000ms;
 }
 body{
   /*background-color: red;*/
@@ -94,8 +94,8 @@ body{
 }
 #mobilePic{
   /*margin-top: 40px;*/
-  min-width: 100px;
-  width: 20%;
+  min-width: 150px;
+  width: 30%;
   border-radius: 100%;
 }
 
