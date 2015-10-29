@@ -19,38 +19,22 @@ mobilePic.style.display = "";
 
 about.addEventListener("click", function(){
   console.log("about");
-  // removeClassAll("slideInRight");
-  // addClassAll("fadeOut");
-  // addClass2(aboutpgMain, aboutpgMobile, "slideInRight");
-  // setTimeout(function(){
-  //   setDisplayNone();
-  //   aboutpgMain.style.display = "";
-  //   aboutpgMobile.style.display = "";
-  //   removeClassAll("fadeOut");
-  // }, 1000);
   changeChanger(aboutpgMain, aboutpgMobile, "slideInRight", "fadeOut");
 });
 
 contact.addEventListener("click", function(){
   console.log("contact");
-  // aboutpg.style.display = "none";
-  // main.style.display = "none";
-  // mobile.style.display = "none";
-  // contactpg.style.display = "block";
+  changeChanger(contactpgMain, contactpgMobile, "slideInRight", "fadeOut");
 });
 
 skills.addEventListener("click", function(){
   console.log("skills");
-  // main.style.display = "none";
-  // mobile.style.display = "none";
-  // skillspg.style.display = "block";
+  changeChanger(skillspgMain, skillspgMobile, "slideInRight", "fadeOut");
 });
 
 projects.addEventListener("click", function(){
   console.log("projects");
-  // main.style.display = "none";
-  // mobile.style.display = "none";
-  // projectspg.style.display = "block";
+  changeChanger(projectspgMain, projectspgMobile, "slideInRight", "fadeOut");
 });
 
 function changeChanger(el1, el2, enterClass, exitClass){
