@@ -19,15 +19,16 @@ mobilePic.style.display = "";
 
 about.addEventListener("click", function(){
   console.log("about");
-  removeClassAll("slideInRight");
-  addClassAll("fadeOut");
-  addClass2(aboutpgMain, aboutpgMobile, "slideInRight");
-  setTimeout(function(){
-    setDisplayNone();
-    aboutpgMain.style.display = "";
-    aboutpgMobile.style.display = "";
-    removeClassAll("fadeOut");
-  }, 1000);
+  // removeClassAll("slideInRight");
+  // addClassAll("fadeOut");
+  // addClass2(aboutpgMain, aboutpgMobile, "slideInRight");
+  // setTimeout(function(){
+  //   setDisplayNone();
+  //   aboutpgMain.style.display = "";
+  //   aboutpgMobile.style.display = "";
+  //   removeClassAll("fadeOut");
+  // }, 1000);
+  changeChanger(aboutpgMain, aboutpgMobile, "slideInRight", "fadeOut");
 });
 
 contact.addEventListener("click", function(){
@@ -51,6 +52,18 @@ projects.addEventListener("click", function(){
   // mobile.style.display = "none";
   // projectspg.style.display = "block";
 });
+
+function changeChanger(el1, el2, enterClass, exitClass){
+  removeClassAll(enterClass);
+  addClassAll(exitClass);
+  addClass2(el1, el2, enterClass);
+  setTimeout(function(){
+    setDisplayNone();
+    el1.style.display = "";
+    el2.style.display = "";
+    removeClassAll(exitClass);
+  }, 1000);
+}
 
 function setDisplayNone(){
   contactpgMain.style.display = "none";
