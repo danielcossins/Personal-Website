@@ -4,14 +4,12 @@ mobilePic.style.display = "";
 
 about.addEventListener("click", function(){
   console.log("about");
-  mainPic.classList.add("animated");
-  mainPic.classList.add("fadeOut");
-  mobilePic.classList.add("animated");
-  mobilePic.classList.add("fadeOut");
+  addClass2(mainPic, mobilePic, "fadeOut");
   setTimeout(function(){
     setDisplayNone();
     aboutpgMain.style.display = "";
     aboutpgMobile.style.display = "";
+    removeClass2(mainPic, mobilePic, "fadeOut");
   }, 1000);
   // mainPic.classList.add("slideOutLeft");
   // mainPic.style.display = "none";
@@ -57,4 +55,14 @@ function setDisplayNone(){
 
   mainPic.style.display = "none";
   mobilePic.style.display = "none";
+}
+
+function addClass2(el1, el2, className){
+  el1.classList.add(className);
+  el2.classList.add(className);
+}
+
+function removeClass2(el1, el2, className){
+  el1.classList.remove(className);
+  el2.classList.remove(className);
 }
