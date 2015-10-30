@@ -6,42 +6,34 @@ mobilePic.style.display = "";
 
 nameTitleArr[0].addEventListener("click", function(){
   console.log("nameTitle");
-  removeClassAll("slideInRight");
+  removeClassAll("fadeInUp");
   changeChanger(mainPic, mobilePic, "fadeIn", "fadeOut");
-  // addClassAll("fadeOut");
-  // addClass2(mainPic, mobilePic, "fadeIn");
-  // setTimeout(function(){
-  //   setDisplayNone();
-  //   mainPic.style.display = "";
-  //   mobilePic.style.display = "";
-  //   removeClassAll("fadeOut");
-  // }, 1000);
 });
 
 nameTitleArr[1].addEventListener("click", function(){
   console.log("nameTitle");
-  removeClassAll("slideInRight");
+  removeClassAll("fadeInUp");
   changeChanger(mainPic, mobilePic, "fadeIn", "fadeOut");
 });
 
 about.addEventListener("click", function(){
   console.log("about");
-  changeChanger(aboutpgMain, aboutpgMobile, "slideInRight", "fadeOut");
+  changeChanger(aboutpgMain, aboutpgMobile, "fadeInUp", "fadeOutDown");
 });
 
 contact.addEventListener("click", function(){
   console.log("contact");
-  changeChanger(contactpgMain, contactpgMobile, "slideInRight", "fadeOut");
+  changeChanger(contactpgMain, contactpgMobile, "fadeInUp", "fadeOutDown");
 });
 
 skills.addEventListener("click", function(){
   console.log("skills");
-  changeChanger(skillspgMain, skillspgMobile, "slideInRight", "fadeOut");
+  changeChanger(skillspgMain, skillspgMobile, "fadeInUp", "fadeOutDown");
 });
 
 projects.addEventListener("click", function(){
   console.log("projects");
-  changeChanger(projectspgMain, projectspgMobile, "slideInRight", "fadeOut");
+  changeChanger(projectspgMain, projectspgMobile, "fadeInUp", "fadeOutDown");
 });
 
 function changeChanger(el1, el2, enterClass, exitClass){
