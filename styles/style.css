@@ -81,7 +81,7 @@ body{
   font-size: 0px;
 }
 #mobile{
-  margin-top: 40px;
+  /*margin-top: 40px;*/
   margin-bottom: 40px;
   font-size: 0px;
 }
@@ -93,7 +93,7 @@ body{
   border-radius: 100%;
 }
 #mobilePic{
-  /*margin-top: 40px;*/
+  margin-top: 10px;
   min-width: 150px;
   width: 30%;
   border-radius: 100%;
@@ -106,6 +106,19 @@ body{
   /*font-size: 20px;*/
 }
 /*////////////////////////*/
+
+
+
+/*CONTACT*/
+.contactBtn{
+  display: inline-block;
+  width: 120px;
+  margin: 20px;
+  vertical-align: middle;
+  opacity: 1;
+  animation-name: change-opacity-reverse;
+  animation-duration: 200ms;
+}
 
 
 
@@ -123,27 +136,7 @@ body{
   }
   /*/////////////*/
   /*#header{
-    display: inline-block;
-  }
-  #about{
-    float: left;
-  }
-  #contact{
-    float: left;
-  }
-  #skills{
-    float: right;
-  }
-  #projects{
-    float: right;
-  }*/
 
-  /*.circle{
-    display: block;
-    display: block;
-    text-align: center;
-    margin: 0 auto;
-  }*/
   .circle{
     display: inline-block;
     color: black;
@@ -191,6 +184,15 @@ body{
   to {background-color: white; color: black;}
 }
 
+@keyframes change-opacity{
+  from {opacity: 1;}
+  to {opacity: .6;}
+}
+@keyframes change-opacity-reverse{
+  from {opacity: .6;}
+  to {opacity: 1;}
+}
+
 .circle:hover {
   color: white;
   background-color: black;
@@ -214,6 +216,13 @@ body{
   background-color: white;
   animation-name: change-color-reverse;
   animation-duration: 400ms;
+}
+
+.contactBtn:hover{
+  cursor: pointer;
+  opacity: .6;
+  animation-name: change-opacity;
+  animation-duration: 200ms;
 }
 /*#name:hover{
   color: white;
