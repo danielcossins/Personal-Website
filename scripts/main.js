@@ -19,8 +19,12 @@ nameTitleArr[1].addEventListener("click", function(){
 about.addEventListener("click", function(){
   console.log("about");
   if(window.innerWidth > 830){
+    removeClassAll("slideInRight");
+    removeClassAll("fadeOutLeft");
     changeChanger(aboutpgMain, aboutpgMobile, "fadeInUp", "fadeOutDown");
   }else{
+    removeClassAll("fadeInUp");
+    removeClassAll("fadeOutDown");
     changeChanger(aboutpgMain, aboutpgMobile, "slideInRight", "fadeOutLeft");
   }
 });
@@ -28,8 +32,12 @@ about.addEventListener("click", function(){
 contact.addEventListener("click", function(){
   console.log("contact");
   if(window.innerWidth > 830){
+    removeClassAll("slideInRight");
+    removeClassAll("fadeOutLeft");
     changeChanger(contactpgMain, contactpgMobile, "fadeInUp", "fadeOutDown");
   }else{
+    removeClassAll("fadeInUp");
+    removeClassAll("fadeOutDown");
     changeChanger(contactpgMain, contactpgMobile, "slideInRight", "fadeOutLeft");
   }
 });
@@ -37,8 +45,12 @@ contact.addEventListener("click", function(){
 skills.addEventListener("click", function(){
   console.log("skills");
   if(window.innerWidth > 830){
+    removeClassAll("slideInRight");
+    removeClassAll("fadeOutLeft");
     changeChanger(skillspgMain, skillspgMobile, "fadeInUp", "fadeOutDown");
   }else{
+    removeClassAll("fadeInUp");
+    removeClassAll("fadeOutDown");
     changeChanger(skillspgMain, skillspgMobile, "slideInRight", "fadeOutLeft");
   }
 });
@@ -46,8 +58,12 @@ skills.addEventListener("click", function(){
 projects.addEventListener("click", function(){
   console.log("projects");
   if(window.innerWidth > 830){
+    removeClassAll("slideInRight");
+    removeClassAll("fadeOutLeft");
     changeChanger(projectspgMain, projectspgMobile, "fadeInUp", "fadeOutDown");
   }else{
+    removeClassAll("fadeInUp");
+    removeClassAll("fadeOutDown");
     changeChanger(projectspgMain, projectspgMobile, "slideInRight", "fadeOutLeft");
   }
 });
