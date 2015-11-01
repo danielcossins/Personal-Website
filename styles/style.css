@@ -303,3 +303,13 @@ body{
 .noSelect .skillsDiv:hover{
   cursor: default;
 }
+
+
+#footer{
+  position: fixed; 
+  bottom: 0;
+  right: 0;
+  left: 0;
+  /*text-align: center;*/
+  background-color: white;
+}
