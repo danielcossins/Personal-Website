@@ -1,4 +1,5 @@
 var nameTitleArr = document.getElementsByClassName("nameTitle");
+var currentClick = 0;
 
 setDisplayNone();
 mainPic.style.display = "";
@@ -6,65 +7,83 @@ mobilePic.style.display = "";
 
 nameTitleArr[0].addEventListener("click", function(){
   console.log("nameTitle");
-  removeClassAll("fadeInUp");
-  changeChanger(mainPic, mobilePic, "fadeIn", "fadeOut");
+  // removeClassAll("fadeInUp");
+  if(currentClick != 0){
+    changeChanger(mainPic, mobilePic, "fadeIn", "fadeOut");
+    currentClick = 0;
+  }
 });
 
 nameTitleArr[1].addEventListener("click", function(){
   console.log("nameTitle");
-  removeClassAll("fadeInUp");
-  changeChanger(mainPic, mobilePic, "fadeIn", "fadeOut");
+  // removeClassAll("fadeInUp");
+  if(currentClick != 0){
+    changeChanger(mainPic, mobilePic, "fadeIn", "fadeOut");
+    currentClick = 0;
+  }
 });
 
 about.addEventListener("click", function(){
   console.log("about");
-  if(window.innerWidth > 830){
-    removeClassAll("slideInRight");
-    removeClassAll("fadeOutLeft");
-    changeChanger(aboutpgMain, aboutpgMobile, "fadeInUp", "fadeOutDown");
-  }else{
-    removeClassAll("fadeInUp");
-    removeClassAll("fadeOutDown");
-    changeChanger(aboutpgMain, aboutpgMobile, "slideInRight", "fadeOutLeft");
+  if(currentClick != 1){
+    if(window.innerWidth > 830){
+      removeClassAll("slideInRight");
+      removeClassAll("fadeOutLeft");
+      changeChanger(aboutpgMain, aboutpgMobile, "fadeInUp", "fadeOutDown");
+    }else{
+      removeClassAll("fadeInUp");
+      removeClassAll("fadeOutDown");
+      changeChanger(aboutpgMain, aboutpgMobile, "slideInRight", "fadeOutLeft");
+    }
+    currentClick = 1;
   }
 });
 
 contact.addEventListener("click", function(){
   console.log("contact");
-  if(window.innerWidth > 830){
-    removeClassAll("slideInRight");
-    removeClassAll("fadeOutLeft");
-    changeChanger(contactpgMain, contactpgMobile, "fadeInUp", "fadeOutDown");
-  }else{
-    removeClassAll("fadeInUp");
-    removeClassAll("fadeOutDown");
-    changeChanger(contactpgMain, contactpgMobile, "slideInRight", "fadeOutLeft");
+  if(currentClick != 2){
+    if(window.innerWidth > 830){
+      removeClassAll("slideInRight");
+      removeClassAll("fadeOutLeft");
+      changeChanger(contactpgMain, contactpgMobile, "fadeInUp", "fadeOutDown");
+    }else{
+      removeClassAll("fadeInUp");
+      removeClassAll("fadeOutDown");
+      changeChanger(contactpgMain, contactpgMobile, "slideInRight", "fadeOutLeft");
+    }
+    currentClick = 2;
   }
 });
 
 skills.addEventListener("click", function(){
   console.log("skills");
-  if(window.innerWidth > 830){
-    removeClassAll("slideInRight");
-    removeClassAll("fadeOutLeft");
-    changeChanger(skillspgMain, skillspgMobile, "fadeInUp", "fadeOutDown");
-  }else{
-    removeClassAll("fadeInUp");
-    removeClassAll("fadeOutDown");
-    changeChanger(skillspgMain, skillspgMobile, "slideInRight", "fadeOutLeft");
+  if(currentClick != 3){
+    if(window.innerWidth > 830){
+      removeClassAll("slideInRight");
+      removeClassAll("fadeOutLeft");
+      changeChanger(skillspgMain, skillspgMobile, "fadeInUp", "fadeOutDown");
+    }else{
+      removeClassAll("fadeInUp");
+      removeClassAll("fadeOutDown");
+      changeChanger(skillspgMain, skillspgMobile, "slideInRight", "fadeOutLeft");
+    }
+    currentClick = 3;
   }
 });
 
 projects.addEventListener("click", function(){
   console.log("projects");
-  if(window.innerWidth > 830){
-    removeClassAll("slideInRight");
-    removeClassAll("fadeOutLeft");
-    changeChanger(projectspgMain, projectspgMobile, "fadeInUp", "fadeOutDown");
-  }else{
-    removeClassAll("fadeInUp");
-    removeClassAll("fadeOutDown");
-    changeChanger(projectspgMain, projectspgMobile, "slideInRight", "fadeOutLeft");
+  if(currentClick != 4){
+    if(window.innerWidth > 830){
+      removeClassAll("slideInRight");
+      removeClassAll("fadeOutLeft");
+      changeChanger(projectspgMain, projectspgMobile, "fadeInUp", "fadeOutDown");
+    }else{
+      removeClassAll("fadeInUp");
+      removeClassAll("fadeOutDown");
+      changeChanger(projectspgMain, projectspgMobile, "slideInRight", "fadeOutLeft");
+    }
+    currentClick = 4;
   }
 });
 
