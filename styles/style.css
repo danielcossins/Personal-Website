@@ -113,7 +113,8 @@ body{
 /*CONTACT*/
 .contactBtn{
   display: inline-block;
-  width: 120px;
+  max-width: 120px;
+  width: 90%;
   margin: 20px;
   vertical-align: middle;
   opacity: 1;
@@ -151,6 +152,9 @@ body{
     height: 190px;
     width: 190px;
     margin-left: calc((200% - 788px) / 6);
+  }
+  .words{
+    width: 90%;
   }
 
 
