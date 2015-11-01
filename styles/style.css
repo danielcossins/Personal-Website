@@ -122,6 +122,15 @@ body{
   animation-duration: 200ms;
 }
 
+/*SKILLS*/
+.skillsDiv{
+  display: inline-block;
+  width: 30%;
+  border: 4px solid black;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
 
 /*Mobile-------------------*/
 #mobile{
