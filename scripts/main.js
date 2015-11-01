@@ -18,22 +18,38 @@ nameTitleArr[1].addEventListener("click", function(){
 
 about.addEventListener("click", function(){
   console.log("about");
-  changeChanger(aboutpgMain, aboutpgMobile, "fadeInUp", "fadeOutDown");
+  if(window.innerWidth > 830){
+    changeChanger(aboutpgMain, aboutpgMobile, "fadeInUp", "fadeOutDown");
+  }else{
+    changeChanger(aboutpgMain, aboutpgMobile, "slideInRight", "fadeOutLeft");
+  }
 });
 
 contact.addEventListener("click", function(){
   console.log("contact");
-  changeChanger(contactpgMain, contactpgMobile, "fadeInUp", "fadeOutDown");
+  if(window.innerWidth > 830){
+    changeChanger(contactpgMain, contactpgMobile, "fadeInUp", "fadeOutDown");
+  }else{
+    changeChanger(contactpgMain, contactpgMobile, "slideInRight", "fadeOutLeft");
+  }
 });
 
 skills.addEventListener("click", function(){
   console.log("skills");
-  changeChanger(skillspgMain, skillspgMobile, "fadeInUp", "fadeOutDown");
+  if(window.innerWidth > 830){
+    changeChanger(skillspgMain, skillspgMobile, "fadeInUp", "fadeOutDown");
+  }else{
+    changeChanger(skillspgMain, skillspgMobile, "slideInRight", "fadeOutLeft");
+  }
 });
 
 projects.addEventListener("click", function(){
   console.log("projects");
-  changeChanger(projectspgMain, projectspgMobile, "fadeInUp", "fadeOutDown");
+  if(window.innerWidth > 830){
+    changeChanger(projectspgMain, projectspgMobile, "fadeInUp", "fadeOutDown");
+  }else{
+    changeChanger(projectspgMain, projectspgMobile, "slideInRight", "fadeOutLeft");
+  }
 });
 
 function changeChanger(el1, el2, enterClass, exitClass){
