@@ -207,6 +207,7 @@ body{
     width: 90%;
     /*fixes weird middle issue*/
     margin-left: 5%;
+    height: auto;
   }
 }
 
